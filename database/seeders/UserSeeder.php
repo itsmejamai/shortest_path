@@ -31,5 +31,7 @@ class UserSeeder extends Seeder
             'role' => 'rider',
             'address' => 'Rider Address',
         ]);
+
+        \App\Models\User::factory(10)->create();
     }
 }
