@@ -12,12 +12,6 @@ class DeliverySeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Delivery::create([
-            'user_id' => 2,
-            'route_id' => 1,
-            'pickup_location' => 'SM Megamall',
-            'dropoff_location' => 'SM North Edsa',
-            'delivery_status' => 'pending',
-        ]);
+        \App\Models\Delivery::factory(10)->create();
     }
 }
