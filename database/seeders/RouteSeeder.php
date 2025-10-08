@@ -12,12 +12,6 @@ class RouteSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Route::create([
-            'start_point' => 'Manila',
-            'end_point' => 'Quezon City',
-            'shortest_path' => 'EDSA',
-            'distance' => 15.5,
-            'travel_time' => '30 minutes',
-        ]);
+        \App\Models\Route::factory(10)->create();
     }
 }
