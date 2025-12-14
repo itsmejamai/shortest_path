@@ -1,12 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "post-autoload-dump": [
-            "@php artisan package:discover --ansi"
-        ],
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
-        ]
+        "post-autoload-dump": "@php artisan package:discover --ansi",
+        "post-update-cmd": "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
     },
     "devDependencies": {}
 }
