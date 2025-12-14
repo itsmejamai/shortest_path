@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\DeliveryController;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
